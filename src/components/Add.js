@@ -6,7 +6,7 @@ import Footer from './Footer'
 function Add() {
 function handleSubmit()
 {
-    axios.post('https://evisa-server.onrender.com/newuser',{
+    axios.post('https://evisa-server.vercel.app/newuser',{
         name:document.getElementById('un').value,
         email:document.getElementById('email1').value,
         password:document.getElementById('pwd').value,
