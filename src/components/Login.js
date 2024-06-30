@@ -8,7 +8,7 @@ function Login({store}) {
     const navigate = useNavigate(null);
     function handleLogin(){
       const user = document.getElementById('email1').value
-        axios.post('https://evisa-server.onrender.com/login',{
+        axios.post('https://evisa-server.vercel.app/login',{
             un:document.getElementById('email1').value,
             pwd:document.getElementById('pwd').value
         }).then((res)=>{
