@@ -9,7 +9,7 @@ function CheckStatus() {
   const [data,setData] = useState()
   const handleSearch = () =>{
    const id = document.getElementById('aid').value
-    axios.post('https://evisa-server.onrender.com/search',{id}).then((res)=>{
+    axios.post('https://evisa-server.vercel.app/search',{id}).then((res)=>{
       setData(res.data)
       setStatus(res.data.status)
     })
