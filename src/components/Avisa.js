@@ -5,7 +5,7 @@ import axios from 'axios'
 function Avisa() {
     const [data,setData]= useState([])
     if(data.length==0){
-    axios.get('https://evisa-server.onrender.com/acceptedvisa',).then((res)=>{
+    axios.get('https://evisa-server.vercel.app/acceptedvisa',).then((res)=>{
         console.log(res.data)
         setData(res.data)
     })
