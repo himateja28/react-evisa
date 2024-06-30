@@ -18,7 +18,7 @@ export default function Apply() {
     const file = document.getElementById('avatar').files[0]
     const file1 = document.getElementById('gid').files[0]
     console.log(file)
-    await axios.post('https://evisa-server.onrender.com/newvisa',{
+    await axios.post('https://evisa-server.vercel.app/newvisa',{
       name:document.getElementById('name').value,
       email:document.getElementById('email').value,
       aadhaar:document.getElementById('anum').value,
