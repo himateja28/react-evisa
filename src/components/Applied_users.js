@@ -11,7 +11,7 @@ function Applied_users()
     }
     const handleReject = ()=>{
         let obj = {...r[0]}
-        axios.post('https://evisa-server.onrender.com/rejected',r[0]).then((res)=>{
+        axios.post('https://evisa-server.vercel.app/rejected',r[0]).then((res)=>{
             console.log('Application rejected')
         })
     }
@@ -19,7 +19,7 @@ function Applied_users()
     let data =[]
     if(r.length==0)
     {
-        axios.get('https://evisa-server.onrender.com/appiledusers',{}).then((res)=>{
+        axios.get('https://evisa-server.vercel.app/appiledusers',{}).then((res)=>{
             console.log(res.data)
             setR(res.data)
             data = {...r}
