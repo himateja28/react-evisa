@@ -7,7 +7,7 @@ import {  MDBBtn,MDBContainer,MDBRow,MDBCol,MDBCard,MDBCardBody,MDBCardImage,MDB
 function Register() {
     const navigate = useNavigate();
     const handleSubmit = () => {
-      axios.post('https://evisa-server.onrender.com/newuser',{
+      axios.post('https://evisa-server.vercel.app/newuser',{
         name:document.getElementById('un').value,
         email:document.getElementById('email1').value,
         password:document.getElementById('pwd').value
