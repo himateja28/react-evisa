@@ -5,7 +5,7 @@ import Navbar2 from './Navbar2';
 function Applied_users()
 {
     const handleAccept = ()=>{
-        axios.post('https://evisa-server.onrender.com/accepted',r[0]).then((res)=>{
+        axios.post('https://evisa-server.vercel.app/accepted',r[0]).then((res)=>{
             console.log('Application accepted')
         })
     }
